@@ -24,6 +24,24 @@ public class GuestListTest {
     }
 
     @Test
+    void shouldReadSameGuestsAsWrittenBefore(){
+
+        //given
+        GuestList guests = new GuestList();
+        //when
+
+        guests.setGuests((List.of("Karl","Ute")));
+
+        System.out.println(guests);
+        String actual = guests.getGuests().toString();
+        //then
+
+        Assertions.assertEquals("[Karl, Ute]",actual);
+
+    }
+
+    @Test
+    void
 
 
 }

@@ -11,6 +11,13 @@ public class GuestList {
         return guests;
     }
 
+    @Override
+    public String toString() {
+        return "GuestList{" +
+                "guests=" + guests +
+                '}';
+    }
+
     public void setGuests(List<String> guests) {
         this.guests = guests;
     }
