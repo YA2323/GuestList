@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class GuestListTest {
@@ -15,12 +16,14 @@ public class GuestListTest {
         GuestList guests = new GuestList();
 
         //when
-        List<String> guestList = new ArrayList<>();
-        int actual = guestList.size();
+         guests.setGuests(Collections.emptyList());
+         int actual = guests.getGuests().size();
 
         //then
         Assertions.assertEquals(0,actual);
     }
+
+    @Test
 
 
 }
